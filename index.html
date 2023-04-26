@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titulo</title>
+    <link rel="style" type="text/css" href="style.css">
+    <style>
+        header{
+            border: 1px black solid;
+            background-color: lightgreen;
+            width: 768px;
+            height: 500px;
+        }
+        nav li{
+            height: 70px;
+            background-color: lightcoral;
+            /*quitar puntos*/
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            transition: .5s;
+        }
+
+        nav li:hover{
+            background-color: maroon;
+            color: red;
+
+        }
+
+        /*
+        section, nav{
+            width: 45%;
+            float: left;
+        }
+        */
+
+        nav{
+            float: left;
+            margin: 0;
+            padding: 0;
+            background-color: lightslategray;
+            width: 40%;
+            height: 100px;
+        }
+
+        /*
+        div{
+            width: 768px;
+            border: 1px solid black;
+        }
+        */
+
+        section{
+            width: 30%;
+            float: right;
+            height: 30%; 
+            background-color: lightskyblue;
+        }
+
+        footer{
+            background-color: lightblue;
+            width: 768px;
+            height: 250px;
+            clear: both;
+        }
+
+        #contenedor-pagina{
+            width: 70px;
+            height: auto;
+            border: 6px solid red;
+            margin: 0 auto;
+}
+    </style>
+</head>
+<body>
+    <div class="contenedor-pagina">
+        <header>
+            encabezado
+        </header>
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="">Item</a></li>
+                    <li><a href="">Item</a></li>
+                    <li><a href="">Item</a></li>
+                    <li><a href="">Item</a></li>
+                </ul>
+            </nav>
+        </div>
+        <section>
+            contenido
+        </section>
+        <footer>
+            pie
+        </footer>
+    </div>
+</body>
+</html>

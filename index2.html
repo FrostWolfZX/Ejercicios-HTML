@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background-color: darkgray;
+        }
+
+        .block{
+            width: 350px;
+            height: 350px;
+            background-color: white;
+            border: 3px solid gray;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        @media only screen and (max-width: 767px){
+            *{
+                font-size: 30px;
+                margin: 0;
+            }
+
+            body{
+                background-color: grey;                
+            }
+
+            .block{
+                margin: 0px;     
+                width: 100%;
+                height: 700px;
+                background-color: whitesmoke;
+            }
+
+            input{
+                width: 280px;
+                height: 30px;
+            }
+
+            button{
+                margin: 100px;
+                width: 280px;
+                height: 60px;
+            }
+
+            img{
+                width:400px;
+            }
+         }
+
+
+    </style>
+
+<script>
+    function index3(){
+        windows.location="index3.html"
+    }
+</script>
+
+</head>
+<body>
+    <br>
+    <br>
+    <br>
+    <section class="block">
+        <img src="assets/aiep.png" width="200px">
+        <br>
+        <div>
+            <form>
+                <br>
+              <p>Nombre</p>
+              <input type="text" name="nombre" id="nombre" required>
+              <br>
+              <br>
+              <p>Email</p>
+              <input type="email" name="email" id="email" required>
+              <br>
+              <br>
+              <button onclick="index3()">Iniciar</button>
+            </form>
+
+          </div>
+    </section>    
+</body>
+</html>
